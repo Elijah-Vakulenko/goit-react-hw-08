@@ -1,14 +1,34 @@
 .searchBox {
-  grid-area: search;
-  border: 2px solid #625332;
-  border-radius: 12px;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 3px solid white;
+  border-radius: 18px;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(167, 102, 50, 0.1);
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 750px;
+  }
 }
 
 .input {
-  margin-top: 25px;
-  border-radius: 13px;
-  padding: 5px;
-  height: 35px;
+  border-radius: 8px;
+  padding-left: 10px;
+  height: 30px;
   width: 100%;
+
+  @media screen and (min-width: 1024px) {
+    width: 500px;
+  }
 }

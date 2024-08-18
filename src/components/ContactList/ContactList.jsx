@@ -26,13 +26,13 @@ const contacts = useSelector(selectFilteredContacts);
   }
 
   return (
-     <ul className={s.contacts_list}>
+     <ul className={s.list}>
       {contacts.length ? (
         contacts.map(({ id, name, number }) => (
           <Contact key={id} id={id} name={name} number={number} />
         ))
       ) : (
-        <h1>No contacts received!</h1>
+        <h1>You've got 0 contacts...</h1>
       )}
     </ul>
   );

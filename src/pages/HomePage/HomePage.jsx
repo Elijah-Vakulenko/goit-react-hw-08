@@ -5,6 +5,7 @@ import AuthNav from '../../components/AuthNav/AuthNav';
 import { UserMenu } from '../../components/UserMenu/UserMenu';
 import { selectIsLoggedIn } from '../../redux/auth/selectors';
 
+
 const HomePage = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);

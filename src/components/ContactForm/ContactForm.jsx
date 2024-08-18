@@ -5,21 +5,22 @@ import * as Yup from 'yup';
 import { nanoid } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
 import { addContact } from "../../redux/contacts/operations";
+import toast, { Toaster } from 'react-hot-toast';
 
 const ContactForm = () => {
 
   const dispatch = useDispatch();
 
-  const initialValues = { //сюди  передаємо наші інпути
+  const initialValues = { 
     name: '',
     number: ''
   };
 
   const validationSchema = Yup.object({
     name: Yup.string()
-      .min(3, 'Too short') //задаємо мінімальне значення введеного в поле
-      .max(50, 'Too long') //задаємо максимум 50 символів
-      .required('Required'),//робимо поле обов'язковим для заповнення з відповідним меседжем
+      .min(3, 'Too short') 
+      .max(50, 'Too long') 
+      .required('Required'),
     number: Yup.string()
       .min(3, 'Too short')
       .max(50, 'Too long')
@@ -44,7 +45,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className={s.form_grid}>
+    <div className={s.wrapper}>
       <Toaster position="top-right" />
       <Formik
         initialValues={initialValues}
@@ -53,11 +54,11 @@ const ContactForm = () => {
       >
         <Form className={s.form}>
           <label className='label' htmlFor="name">Name</label>
-          <Field name="name" className={s.input} id="name" />
+          <Field name="name" className='input' id="name" />
           <ErrorMessage name="name" component="div" className={s.error} />
 
           <label className='label' htmlFor="number">Number</label>
-          <Field name="number" className={s.input} id="number" />
+          <Field name="number" className='input' id="number" />
           <ErrorMessage name="number" component="div" className={s.error} />
 
           <button className={s.btn} type="submit">Add Contact</button>
