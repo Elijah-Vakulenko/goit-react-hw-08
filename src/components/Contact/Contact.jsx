@@ -35,7 +35,7 @@ const Contact = ({name, number, id}) => {
               </div>
       </div>
       <Toaster position="top-right" />
-      <button className={s.delBtn} type="button" onClick={() => dispatch(deleteContact(id))}>Delete</button>
+      <button className={s.delBtn} type="button" onClick={handleDelete}>Delete</button>
     </div>
   )
 }

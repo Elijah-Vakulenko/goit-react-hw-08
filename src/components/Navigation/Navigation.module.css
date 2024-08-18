@@ -1,0 +1,49 @@
+.navBar {
+  padding: 8px;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 350px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    background-color: #1c1b19;
+    color: white;
+    padding: 20px;
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 30px;
+  }
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 35px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 50px;
+  }
+}
+
+.link {
+  font-size: 20px;
+  font-weight: bold;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { lazy, useEffect } from 'react';
 import { selectIsRefreshing } from './redux/auth/selectors';
-import Loader from './components/';
+import Loader from './components/Loader/Loader';
 import Layout from './Layout';
 import { Route, Routes } from 'react-router-dom';
 import RestrictedRoute from './RestrictedRoute';
@@ -11,8 +11,8 @@ import { refreshUser } from './redux/auth/operations';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
-const LogInPage = lazy(() => import('./pages/LogInPage'));
-const SignUpPage = lazy(() => import('./pages/SignUpPage'));
+const LogInPage = lazy(() => import('./pages/LogInPage/LoginPage'));
+const SignUpPage = lazy(() => import('./pages/SignUpPage/SignUpPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
 
 const App = () => {
