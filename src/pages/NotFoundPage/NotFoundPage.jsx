@@ -3,8 +3,9 @@ import s from './NotFoundPage.module.css';
 
 const NotFoundPage = () => {
   return (
-    <div>
-      <h1 className={s.notFound}>404 - Page Not Found</h1>
+    <div className={s.wrapper}>
+      <h1 className={s.notFound}>404</h1>
+      <h2>Page Not Found</h2>
       <Link className={s.link} to="/">
         Go to Home
       </Link>
