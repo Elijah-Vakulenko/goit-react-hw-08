@@ -49,7 +49,7 @@ const LogInForm = () => {
           <label className={s.input_title}>Password</label>
           <Field className={s.label} name="password" type="password" required />
           <button className={s.btn} type="submit">
-            Sign in
+            Log In
           </button>
           <span className={s.text}>
             Don't have an account?{' '}

@@ -3,7 +3,7 @@
 import React from 'react';
 import s from './ContactList.module.css';
 import Contact from '../Contact/Contact';
-import Loader '../Loader/Loader'
+import Loader from '../Loader/Loader';
 import { useSelector } from "react-redux";
 import {
   selectError,

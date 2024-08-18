@@ -1,5 +1,5 @@
 :root {
-  font-family: "Underwood", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -78,15 +78,27 @@ textarea {
   border-radius: 8px;
   height: 30px;
   padding-left: 10px;
+  width: 100%;
+  
+    @media screen and (min-width: 1024px) {
+      width: 500px;
+    }
+
+  &:not(:last-child){
+    margin-bottom: 8px;
+  }
 }
 
-/* @font-face {
-  font-family: "Underwood";
-  src: url(./font/underwood_champion.ttf);
-} */
+
+
+@font-face {
+  font-family: "Impact";
+  src: url(./font/impact.ttf);
+}
 
 label {
   font-size: 16px;
+  margin-bottom: 8px;
 }
 
 .visuallyHidden {

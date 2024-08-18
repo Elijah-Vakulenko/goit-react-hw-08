@@ -3,8 +3,7 @@
   color: black;
   display: flex;
   align-items: center;
-  gap: 20px;
-  width: 350px;
+  gap: 15px;
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
 
@@ -15,7 +14,8 @@
     background-color: #1c1b19;
     color: white;
     padding: 20px;
-    width: 400px;
+    gap: 20px;
+
   }
 
   @media screen and (min-width: 1024px) {
@@ -24,7 +24,7 @@
 }
 
 .logo {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Impact", sans-serif;
   font-size: 25px;
   font-weight: bold;
 
