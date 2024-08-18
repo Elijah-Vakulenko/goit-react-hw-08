@@ -1,0 +1,34 @@
+.form_grid {
+  grid-area: form;
+  border: 2px solid #625332;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  border-radius: 13px;
+  margin-top: 25px;
+  border: 1px solid #353b3b;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  height: 50px;
+  background-color: #67705f;
+
+  &:hover {
+    background-color: #353b3b;
+  }
+}
+
+.input {
+  border-radius: 13px;
+  padding: 5px;
+  height: 35px;
+  width: 100%;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,14 @@
+.searchBox {
+  grid-area: search;
+  border: 2px solid #625332;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.input {
+  margin-top: 25px;
+  border-radius: 13px;
+  padding: 5px;
+  height: 35px;
+  width: 100%;
+}
